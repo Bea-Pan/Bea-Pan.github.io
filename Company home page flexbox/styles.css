@@ -175,7 +175,7 @@ header figcaption {
     display: flex;
     align-items:center;
     margin-top: 5.35rem;
-    background-image: url(/images/banner-africa-trea_cropped_2.jpg);
+    background-image: url(images/banner-africa-trea_cropped_2.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height:436px;
@@ -292,7 +292,7 @@ header figcaption {
 
 .banner-scientists {
     margin: auto;
-    background-image: url(/images/rsz_scentists-banner.jpg);
+    background-image: url(images/rsz_scentists-banner.jpg);
     height: 600px;
     width: auto;
     background-size: cover;
