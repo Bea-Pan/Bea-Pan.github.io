@@ -176,6 +176,7 @@ header figcaption {
     align-items:center;
     margin-top: 5.35rem;
     background-image: url(images/banner-africa-trea_cropped_2.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height:436px;
