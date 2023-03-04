@@ -356,7 +356,7 @@ header {
 
 .meet-up {
     grid-row-start: 34;
-    grid-row-end: span 5;
+    grid-row-end: span 6;
     grid-column-start: 1;
     grid-column-end: 14;
     margin-right: 0;
@@ -364,7 +364,7 @@ header {
 }
 
 .quote {
-    grid-row-start: 40;
+    grid-row-start: 41;
     grid-row-end: span 7;
     grid-column-start: 1;
     grid-column-end: 14;
@@ -468,7 +468,7 @@ footer span {
 /* MOBILE */
 @media only screen and (max-width:700px){
     footer {
-        grid-row-start: 42;
+        grid-row-start: 49;
         grid-row-end: span 2;
         grid-column-start: 1;
         grid-column-end: 14;
