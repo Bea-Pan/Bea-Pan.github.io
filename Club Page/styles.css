@@ -332,7 +332,7 @@ header {
 }
 
 .rides {
-    grid-row-start: 20;
+    grid-row-start: 22;
     grid-row-end: span 4;
     grid-column-start: 1;
     grid-column-end: span 14; 
@@ -341,7 +341,7 @@ header {
 .photos-rides {
     display: flex;
     justify-content:space-evenly;
-    grid-row-start: 25;
+    grid-row-start: 27;
     grid-row-end: span 7;
     grid-column-start: 1;
     grid-column-end: span 14;
@@ -355,7 +355,7 @@ header {
 }
 
 .meet-up {
-    grid-row-start: 32;
+    grid-row-start: 34;
     grid-row-end: span 5;
     grid-column-start: 1;
     grid-column-end: 14;
@@ -364,8 +364,8 @@ header {
 }
 
 .quote {
-    grid-row-start: 36;
-    grid-row-end:42;
+    grid-row-start: 40;
+    grid-row-end: span 7;
     grid-column-start: 1;
     grid-column-end: 14;
     margin-right: 0;
