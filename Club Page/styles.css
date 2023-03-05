@@ -9,8 +9,8 @@
     width: 100%;
     height: auto;
     display: grid;
-    grid-template: repeat(44, 2.5rem) / repeat(12, 1fr);
-    background-color: #275086;
+    grid-template: repeat(24, 2.5rem) / repeat(12, 1fr);
+    background-image: url(images/bike-background.jpg);
     background-position-y: center;
     background-size: cover;
     background-attachment: fixed;
@@ -28,6 +28,7 @@ header {
     width:100px;
     height: auto;
 }
+
 
 .navbar {
     grid-area: 1/8/3/13;
@@ -63,7 +64,7 @@ header {
         width: 100%;
         height: auto;
         display: grid;
-        grid-template: repeat(44, 2.5rem) / repeat(13, 1fr);
+        grid-template: repeat(40, 2.5rem) / repeat(13, 1fr);
         background-image: url(./images/tablet-background-cut.jpg);
         background-position-y: center; 
         background-size: cover;
@@ -76,22 +77,21 @@ header {
         }
 
     .header-mobile-logo{
-        grid-area: 1/1/4/14;
+        grid-area: 1/1/6/14;
         background-color:#275086;
         display: grid;
     }
 
     #logo-mobile {
-        grid-area: 1/11/span 3/span 2;
-        width:115px;
+        grid-area: 1/5/6/9; 
+        width:200px;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        margin-right: -2.5rem;
         height: auto; 
     }
 
     .navbar-mobile{
-        grid-area: 4/1/span 4/14;
+        grid-area: 6/1/10/14;
         background-color: black;
         opacity: 0.9;
         display: grid;
@@ -196,65 +196,28 @@ header {
     }
 }
 
-/* BANNER */
-
-.banner {
-    background: url(./images/images-kids/kids-background-banner-take3.jpg);
-    background-position-y: center; 
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-    grid-area:3/1/span 9/ span 12;
-}
-/* Mobile */
-@media only screen and (max-width:700px) {
-    .banner {
-        display: none;
-    }
-
-    .banner-tablet {
-        display: none;
-    }
-}
-
-/* Tablet */
-@media only screen and (max-width:1024px) and (min-width: 700px){
-    
-    .banner {
-       display: none;
-    }
-
-    .banner-tablet {
-        background: url(./images/images-kids/kids-background-banner-take4.jpg);
-        background-position-y: center; 
-        background-size: cover;
-        background-repeat: repeat-y;
-        grid-area:3/1/span 9/ span 12;
-    }
-}
-
-
 /*ABOUT*/
 .box {
     background-color: #ffd966;
-    color: #275086;
+    color:#275086;
     padding: 10px;
-    box-shadow: 0 0 30px  #ff6666;
-    box-shadow: 0 0 30px  #ff6666;  
+    box-shadow: 0 0 30px  #fff0b3;
+    box-shadow: 0 0 30px  #fff0b3;
 }
 
+
 .about {
-    grid-area: 13/ 1/ span 3/ span 6;
+    grid-area: 4/ 1/ span 3/ span 6;
     margin-left: 2rem;
 }
 
-.photos-kids-top {
+.photos-about {
     display: flex;
     justify-content: space-between;
-    grid-area: 17/1/span 6/ span 13;
+    grid-area: 8/1/span 6/ span 13;
 }
 
-.photos-kids-top img {
+.photos-about img {
     width: 31%;
     height: auto;
     margin: 0.75rem;
@@ -265,13 +228,13 @@ header {
 }
 
 .rides {
-    grid-area: 24/4/span 3/ span 8;
+    grid-area: 15/4/span 3/ span 6;
 } 
 
 .photos-rides {
     display: flex;
     justify-content:start;
-    grid-area: 28/1/span 14/ span 7;
+    grid-area: 19/1/span 7/ span 7;
 }
 
 .photos-rides img {
@@ -285,12 +248,12 @@ header {
 }
 
 .meet-up {
-    grid-area: 28/8/span 6/span 5;
+    grid-area: 19/8/span 5/span 5;
     margin-right: 2rem;  
 }
 
 .quote {
-    grid-area: 35/8/span 7/ span 5;
+    grid-area: 25/8/span 1/ span 5;
     margin-right: 2rem;
     margin-bottom: 2rem;
     background-color: #275086;
@@ -298,8 +261,8 @@ header {
     padding: 1rem;
     background: rgba(39, 80, 134, 0.8);
     border-radius: 3%;
-    box-shadow: 0 0 30px #fff0b3;
-    box-shadow: 0 0 30px #fff0b3;
+    box-shadow: 0 0 30px #275086;
+    box-shadow: 0 0 30px #275086;
 }
 
 .quote-style {
@@ -311,124 +274,123 @@ header {
 /* MOBILE */
 @media only screen and (max-width:700px){
   
-.box {
-        background-color:#275086;
+    .box {
+        background-color:#275086 ;
         color:#ffd966;
         border:none;
+        box-shadow: 0 0 30px  #ff6666;
+        box-shadow: 0 0 30px  #ff6666; 
+    }
+
+    .about {
+        margin-top: 0.3rem;
+        grid-area: 11/1/span 5/ 14;
+        margin-left: 0;
+    }
+    .photos-about {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        grid-area: 16/1/span 6/ span 13;
+    }
+
+    .photos-about img {
+        width:90%;
+        margin-top: 1rem;
+        box-shadow: 0 0 30px #275086; 
+        box-shadow: 0 0 30px #275086; 
+    }
+
+    #photos-about-two {
+        display: none;
+    }
+
+    #photos-about-three {
+        display: none;
+    }
+
+    .rides {
+        grid-area: 22/1/span 4/ span 14;
+    } 
+
+    .photos-rides {
+        display: flex;
+        justify-content:space-evenly;
+        grid-area: 27/ 1/ span 7/ span 14;
+    }
+
+    .photos-rides img {
+        margin-left: 0;
+        box-shadow: 0 0 30px #275086; 
+        box-shadow: 0 0 30px #275086; 
+    }
+
+    .meet-up {
+        grid-area: 34/1/span 6/ 14;
+        margin-right: 0;
         
     }
 
-.about {
-    margin-top: 0  ;
-    grid-area: 9/1/span 4/ 14;
-    margin-left: 0;
-  }
-  
-.photos-kids-top {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    grid-area: 13/1/span 6/ span 13;
-}
-
-.photos-kids-top img {
-    width:90%;
-    margin-top: 1rem;
-    box-shadow: 0 0 30px #275086; 
-    box-shadow: 0 0 30px #275086; 
-}
-
-#photos-kids-two {
-    display: none;
-}
-
-#photos-kids-three {
-    display: none;
-}
-
-.rides {
-    grid-area: 19/1/span 5/ span 14;
-    
-} 
-
-.photos-rides {
-    display: flex;
-    justify-content:space-evenly;
-    grid-area: 25/ 1/ span 7/ span 14;
-}
-
-.photos-rides img {
-    margin-left: 0;
-    box-shadow: 0 0 30px #275086; 
-    box-shadow: 0 0 30px #275086; 
-}
-
-.meet-up {
-    grid-area: 32/1/span 6/ 14;
-    margin-right: 0;
-    
-}
-
-.quote {
-    grid-area: 39/1/span 7/ 14;
-    margin-right: 0;
-}
+    .quote {
+        grid-area: 41/1/span 7/ 14;
+        margin-right: 0;
+    }
 }
 
 /* TABLET */
 
 @media only screen and (max-width:1024px) and (min-width: 700px) {
 
-.box {
+    .box {
+        background-color:#275086;
+        color:#ffd966;
+        box-shadow: 0 0 30px  #ff6666;
+        box-shadow: 0 0 30px  #ff6666; 
+    }
+    .about {
+        margin-left:auto;
+        grid-area: 4/2/span 3/ span 10;
+    }
+
+    .photos-about img {
+        box-shadow: 0 0 30px #275086; 
+        box-shadow: 0 0 30px #275086; 
+        margin: 0.5rem;
+        justify-content: space-evenly;
+    }
+
+    .rides {
+        grid-column: 2/ span 10;
+        
+    }  
+
+    .photos-rides img {
+        box-shadow: 0 0 30px #275086; 
+        box-shadow: 0 0 30px #275086; 
+    }
+
+    .meet-up {
+        grid-row-end: span 7;
     
-    background-color:#275086;
-    color:#ffd966;
-    border: none;
-}
-.about {
-    margin-left:auto;
-    grid-area: 13/2/span 3/ span 10;
-}
+    }
 
-.photos-kids-top img {
-    box-shadow: 0 0 30px #275086; 
-    box-shadow: 0 0 30px #275086; 
-    margin: 0.5rem;
-    justify-content: space-evenly;
-}
+    .quote {
+        grid-row: 27/ span 14;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content:space-evenly; 
+    }
 
-.rides {
-    grid-column: 2/ span 10;
-    
-}  
+    .photos-rides {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.photos-rides img {
-    box-shadow: 0 0 30px #275086; 
-    box-shadow: 0 0 30px #275086; 
-}
-
-.meet-up {
-    grid-row-end: span 8;
-   
-}
-
-.quote {
-    grid-row: 37/ span 5;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content:space-evenly; 
-}
-
-.photos-rides {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.photos-rides img {
-    min-width: 270px;
-    max-width: 400px;
-}
+    .photos-rides img {
+        min-width: 270px;
+        max-width: 400px;
+    }
 
 }
 
@@ -441,7 +403,7 @@ header {
 /* FOOTER */
 
 footer {
-    grid-area: 43/ 1/ span 2/ 13;
+    grid-area: 27/ 1/ 30/ 13;
     text-align: center;
     padding: 1.25rem;
     background-color: black;
@@ -464,7 +426,7 @@ footer span {
 
 @media only screen and (max-width:1024px) and (min-width: 700px) {
     footer {
-        grid-row: 42/ span 2;
+        grid-row: 41/43;
     }
 }
 
