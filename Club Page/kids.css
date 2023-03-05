@@ -82,11 +82,11 @@ header {
     }
 
     #logo-mobile {
-        grid-area: 1/1/span 3/span 2;
-        width:110px;
+        grid-area: 1/11/span 3/span 2;
+        width:115px;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        margin-left: 0.6rem;
+        margin-right: -2.5rem;
         height: auto; 
     }
 
@@ -316,8 +316,6 @@ header {
         background-color:#275086;
         color:#ffd966;
         border:none;
-        box-shadow: 0 0 30px #ffd966;
-        box-shadow: 0 0 30px #ffd966;
         
     }
 
@@ -386,8 +384,6 @@ header {
     
     background-color:#275086;
     color:#ffd966;
-    box-shadow: 0 0 30px #ff6666;
-    box-shadow: 0 0 30px #ff6666;
     border: none;
 }
 .about {
