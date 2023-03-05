@@ -239,10 +239,9 @@ header {
     background-color: #ffd966;
     color: #275086;
     padding: 10px;
-    box-shadow: 0 0 30px #fff0b3;
-    box-shadow: 0 0 30px #fff0b3;
+    box-shadow: 0 0 30px  #ff6666;
+    box-shadow: 0 0 30px  #ff6666;  
 }
-
 
 .about {
     grid-area: 13/ 1/ span 3/ span 6;
