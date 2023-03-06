@@ -294,6 +294,8 @@ section img {
     border-radius: 3%;
     box-shadow: 0 0 30px #fff0b3;
     box-shadow: 0 0 30px #fff0b3;
+    display: grid;
+    align-content: center; 
 }
 
 .quote-style {
