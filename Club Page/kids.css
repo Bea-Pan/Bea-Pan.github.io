@@ -240,6 +240,8 @@ header {
     padding: 10px;
     box-shadow: 0 0 30px  #ff6666;
     box-shadow: 0 0 30px  #ff6666;  
+    display: grid;
+    align-content: center;
 }
 
 .about {
@@ -299,6 +301,8 @@ header {
     border-radius: 3%;
     box-shadow: 0 0 30px #fff0b3;
     box-shadow: 0 0 30px #fff0b3;
+    display: grid;
+    align-content: center;
 }
 
 .quote-style {
