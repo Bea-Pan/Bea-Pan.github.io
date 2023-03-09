@@ -335,6 +335,8 @@ section img {
 .quote {
     grid-area: 54/1/span 9/ 14;
     margin-right: 0;
+    box-shadow: 0 0 30px #275086;
+    box-shadow: 0 0 30px #275086;
 }
 }
 
@@ -372,6 +374,8 @@ section img {
     align-items: center;
     justify-content:space-evenly; 
     margin-right: 0;
+    box-shadow: 0 0 30px #275086;
+    box-shadow: 0 0 30px #275086;
 }
 
 }
