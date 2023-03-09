@@ -375,6 +375,8 @@ header {
 .quote {
     grid-area: 39/1/span 7/ 14;
     margin-right: 0;
+    box-shadow: 0 0 30px #275086;
+    box-shadow: 0 0 30px #275086;
 }
 }
 
@@ -414,13 +416,15 @@ header {
     grid-row-end: span 8;
    
 }
-
+ 
 .quote {
     grid-row: 37/ span 5;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content:space-evenly; 
+    box-shadow: 0 0 30px #275086;
+    box-shadow: 0 0 30px #275086;
 }
 
 .photos-rides {
